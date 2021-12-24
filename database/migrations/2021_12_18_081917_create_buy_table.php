@@ -15,10 +15,10 @@ class CreateBuyTable extends Migration
     {
         Schema::create('buy', function (Blueprint $table) {
             $table->id();
-            $table->string('Pokypatel_name');
-            $table->text('pokypki');
-            $table->integer('summa');
-            $table->dateTime('buy_time')->comment('время покупки');
+            $table->string('Pokypatel_name')->comment('Имя покупателя');
+            $table->text('pokypki')->comment('Товары');
+            $table->integer('summa')->comment('Сумма покупки');
+            $table->string('sposob_oplati')->comment('Способ оплаты');
         });
     }
 

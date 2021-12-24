@@ -16,3 +16,14 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('buy', 'BuyController@showAll');
+
+$router->get('buy/{id}', 'BuyController@showId');
+
+$router->get('buy/{id}/delete', 'BuyController@delete');
+
+$router->get('buy/add', 'BuyController@add');
+
+$router->get('buy/{id}/edit', 'BuyController@edit');
+
