@@ -25,5 +25,5 @@ $router->get('buy/{id}/delete', 'BuyController@delete');
 
 $router->get('buy/add', 'BuyController@add');
 
-$router->get('buy/{id}/edit', 'BuyController@edit');
+$router->get('buy/edit/{id}', 'BuyController@edit');
 

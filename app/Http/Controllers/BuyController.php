@@ -33,7 +33,7 @@ class BuyController extends Controller
     public function delete($id) {
         $buy = Buy::find($id);
         $buy->delete();
-        return response()->json(['buy'=> 'Запись успешно удалена.'], 200);
+        return response()->json(['Запись удалена.'], 200);
     }
 
     public function add(Request $request) {
